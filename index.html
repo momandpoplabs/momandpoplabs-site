@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mom and Pop Labs</title>
-<meta name="description" content="Mom and Pop Labs is an independent software studio.">
+<meta name="description" content="Mom and Pop Labs is an independent software company that designs, builds, and supports its own iPhone apps.">
 <style>
   :root {
     --bg: #101214; --ink: #C9CFD6; --muted: #8A939C; --line: rgba(201,207,214,.12);
@@ -15,32 +15,63 @@
     font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     font-size: 15px; line-height: 1.7;
   }
-  .wrap { max-width: 600px; margin: 0 auto; padding: 96px 24px 72px; }
-  h1 { font-size: 1.15rem; font-weight: 600; margin: 0 0 4px; letter-spacing: .01em; }
-  .role { color: var(--muted); margin: 0 0 36px; }
-  hr { border: none; border-top: 1px solid var(--line); margin: 36px 0; }
-  p { margin: 0 0 10px; }
-  .label { color: var(--muted); font-size: .82rem; margin-bottom: 2px; }
+  .wrap { max-width: 600px; margin: 0 auto; padding: 72px 24px; }
+  nav { margin-bottom: 56px; font-size: .85rem; display: flex; gap: 18px; flex-wrap: wrap; }
+  nav a { color: var(--muted); border-bottom: none; }
+  nav a[aria-current] { color: var(--ink); }
+  h1 { font-size: 1.15rem; font-weight: 600; margin: 0 0 16px; letter-spacing: .01em; }
+  h2 { font-size: .95rem; font-weight: 600; margin: 30px 0 6px; }
+  p { margin: 0 0 12px; max-width: 60ch; }
   a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
   a:hover, a:focus-visible { border-bottom-color: var(--ink); }
   a:focus-visible { outline: 2px solid var(--muted); outline-offset: 3px; }
-  footer { color: var(--muted); font-size: .82rem; display: flex; gap: 18px; flex-wrap: wrap; }
+  footer {
+    margin-top: 64px; padding-top: 18px; border-top: 1px solid var(--line);
+    font-size: .82rem; color: var(--muted); display: flex; gap: 18px; flex-wrap: wrap;
+  }
+  footer a { color: var(--muted); border-bottom: none; }
+  footer a:hover { color: var(--ink); }
 </style>
 </head>
 <body>
   <main class="wrap">
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/support.html">Support</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+
     <h1>Mom and Pop Labs</h1>
-    <p class="role">Independent software studio</p>
 
-    <hr>
+    <p>Mom and Pop Labs is an independent software company. We design,
+    build, and support our own apps for iPhone.</p>
 
-    <p class="label">Contact</p>
-    <p><a href="mailto:support@momandpoplabs.com">support@momandpoplabs.com</a></p>
+    <p>It's a small operation and we like it that way. No outside funding,
+    no client work, no growth team. We make things we want to use, ship
+    them when they're ready, and answer our own support email.</p>
 
-    <hr>
+    <h2>How we build</h2>
+    <p>A few rules we hold ourselves to across everything we release:
+    our apps work without an account. They work offline wherever that's
+    possible. We don't sell or share user data — most of the time we never
+    receive any. And if something breaks, the person reading your email is
+    the person who can fix it.</p>
+
+    <h2>What's next</h2>
+    <p>Our first title is in private testing. We'll have more to say when
+    it's ready — announcements will land here.</p>
+
+    <h2>Get in touch</h2>
+    <p>Questions about the company or our apps:
+    <a href="mailto:support@momandpoplabs.com">support@momandpoplabs.com</a>.
+    There's more on the <a href="/support.html">support page</a>, including
+    how billing and refunds work.</p>
 
     <footer>
       <span>© 2026 Mom and Pop Labs LLC</span>
+      <a href="/support.html">Support</a>
+      <a href="/terms.html">Terms</a>
       <a href="/privacy.html">Privacy</a>
     </footer>
   </main>
